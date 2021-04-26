@@ -1,5 +1,21 @@
+@font-face {
+  font-family: 'montserrat';
+  src: local('montserrat'), url(./fonts/Montserrat/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: local('open-sans'), url(./fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'titillium-web';
+  src: local('titillium-web'), url(./fonts/Titillium_Web/TitilliumWeb-Regular.ttf) format('truetype');
+}
+
 .App {
   text-align: center;
+  font-family: open-sans;
 }
 
 .App-logo {
