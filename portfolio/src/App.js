@@ -1,14 +1,10 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { 
-  BrowserRouter as Router, 
-  Switch, 
-  Route
-} from 'react-router-dom';
-import Navigation from './Navigation';
-import Home from './pages/Home';
-import Courses from './pages/Courses';
-import Projects from './pages/Projects';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navigation from "./Navigation";
+import Home from "./pages/Home";
+import Courses from "./pages/Courses";
+import Projects from "./pages/Projects";
 
 function App() {
   return (

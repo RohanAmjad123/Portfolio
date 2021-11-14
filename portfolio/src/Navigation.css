@@ -1,0 +1,11 @@
+.nav {
+    background-color: #1f1f1f;
+}
+
+img {
+    opacity: 0.8;
+}
+
+img:hover {
+    opacity: 1;
+}
