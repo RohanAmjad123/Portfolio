@@ -1,15 +1,14 @@
 import Grid from "@mui/material/Grid";
-import Container from "@mui/material/Container";
 
-function Semester (props) {
-    return (
-        <Container maxWidth="lg">
-            <h2>{props.title}</h2>
-            <Grid container alignItems="center" justifyContent="flex-start">  
-                {props.children}
-            </Grid>
-        </Container>
-    );
+function Semester(props) {
+  return (
+    <Grid container spacing={2} alignItems="bottom" justifyContent="flex-start">
+      <Grid item lg={12} md={12} sm={12} xs={12}>
+        <h2>{props.title}</h2>
+      </Grid>
+      {props.children}
+    </Grid>
+  );
 }
 
 export default Semester;
