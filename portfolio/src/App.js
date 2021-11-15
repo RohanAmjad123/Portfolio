@@ -1,5 +1,4 @@
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import CssBaseline from "@mui/material/CssBaseline";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navigation from "./Navigation";
 import Home from "./pages/Home";
@@ -9,10 +8,12 @@ import Projects from "./pages/Projects";
 function App() {
   return (
     <Router>
+      <CssBaseline />
       <div className="App">
         <Navigation />
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/home" exact component={Home} />
           <Route path="/courses" exact component={Courses} />
           <Route path="/projects" exact component={Projects} />
         </Switch>

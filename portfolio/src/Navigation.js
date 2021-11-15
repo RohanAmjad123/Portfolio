@@ -1,34 +1,22 @@
-import "./Navigation.css";
 import { Link } from "react-router-dom";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import NavItem from "react-bootstrap/NavItem";
+import AppBar from "@mui/material/AppBar";
+import Toolbar from "@mui/material/Toolbar";
+import Tab from "@mui/material/Tab";
+import LinkedIn from "@mui/icons-material/LinkedIn";
+import GitHub from "@mui/icons-material/GitHub";
 import signature from "./images/Signature6.png";
 
 function Navigation() {
   return (
-    <Navbar className="nav" expand="lg" variant="dark" sticky="top">
-      <Navbar.Brand as={Link} to="/">
-        <img src={signature} width="128" height="40" alt="Rohan Amjad" />
-      </Navbar.Brand>
-      <Nav>
-        <NavItem>
-          <Nav.Link as={Link} to="/">
-            Home
-          </Nav.Link>
-        </NavItem>
-        <NavItem>
-          <Nav.Link as={Link} to="/courses">
-            Courses
-          </Nav.Link>
-        </NavItem>
-        <NavItem>
-          <Nav.Link as={Link} to="/projects">
-            Projects
-          </Nav.Link>
-        </NavItem>
-      </Nav>
-    </Navbar>
+    <AppBar sx={{backgroundColor: "black"}} position="static" color="secondary">
+      <Toolbar>
+        <Tab label="Home" component={Link} to="./Home" />
+        <Tab label="Courses" component={Link} to="./Courses" />
+        <Tab label="Projects" component={Link} to="./Projects" />
+        <LinkedIn />
+        <GitHub />
+      </Toolbar>
+    </AppBar>
   );
 }
 
