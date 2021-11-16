@@ -25,6 +25,7 @@ function Navigation() {
               smooth={true}
               offset={-70}
               duration={1000}
+              style={{textDecoration: "none", color: "white"}}
             >
               {" "}
               <Tab label="Home" />
@@ -38,6 +39,7 @@ function Navigation() {
               smooth={true}
               offset={-70}
               duration={1000}
+              style={{textDecoration: "none", color: "white"}}
             >
               {" "}
               <Tab label="Courses" />
@@ -51,6 +53,7 @@ function Navigation() {
               smooth={true}
               offset={-70}
               duration={1000}
+              style={{textDecoration: "none", color: "white"}}
             >
               {" "}
               <Tab label="Projects" />
