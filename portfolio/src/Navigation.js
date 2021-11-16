@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Tab from "@mui/material/Tab";
@@ -18,13 +18,43 @@ function Navigation() {
       <Toolbar>
         <Grid container alignItems="center">
           <Grid item>
-            <Tab label="Home" component={Link} to="./Home" />
+            <Link
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+            >
+              {" "}
+              <Tab label="Home" />
+            </Link>
           </Grid>
           <Grid item>
-            <Tab label="Courses" component={Link} to="./Courses" />
+            <Link
+              activeClass="active"
+              to="courses"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+            >
+              {" "}
+              <Tab label="Courses" />
+            </Link>
           </Grid>
           <Grid item>
-            <Tab label="Projects" component={Link} to="./Projects" />
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+            >
+              {" "}
+              <Tab label="Projects" />
+            </Link>
           </Grid>
           <Grid item xs />
           <Grid item>
