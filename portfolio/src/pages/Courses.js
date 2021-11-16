@@ -145,7 +145,7 @@ function Courses() {
           <Semester title="Winter 2020">
             <Course
               title="COMS 363"
-              desc="Professional Tehcnical Communication"
+              desc="Professional Technical Communication"
               image={images["white.jpg"].default}
             />
             <Course
@@ -248,7 +248,7 @@ function Courses() {
           <Semester title="Fall 2018">
             <Course
               title="CHEM 209"
-              desc="General Chemistry of Engineers"
+              desc="General Chemistry for Engineers"
               image={images["white.jpg"].default}
             />
             <Course
