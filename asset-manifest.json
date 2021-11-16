@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/portfolio_website/static/js/main.42c857e0.chunk.js",
-    "main.js.map": "/portfolio_website/static/js/main.42c857e0.chunk.js.map",
-    "runtime-main.js": "/portfolio_website/static/js/runtime-main.b1f4474c.js",
-    "runtime-main.js.map": "/portfolio_website/static/js/runtime-main.b1f4474c.js.map",
-    "static/css/2.ac68c868.chunk.css": "/portfolio_website/static/css/2.ac68c868.chunk.css",
-    "static/js/2.985aeccc.chunk.js": "/portfolio_website/static/js/2.985aeccc.chunk.js",
-    "static/js/2.985aeccc.chunk.js.map": "/portfolio_website/static/js/2.985aeccc.chunk.js.map",
-    "index.html": "/portfolio_website/index.html",
-    "static/css/2.ac68c868.chunk.css.map": "/portfolio_website/static/css/2.ac68c868.chunk.css.map",
-    "static/js/2.985aeccc.chunk.js.LICENSE.txt": "/portfolio_website/static/js/2.985aeccc.chunk.js.LICENSE.txt",
-    "static/media/Signature6.74c01a45.png": "/portfolio_website/static/media/Signature6.74c01a45.png",
-    "static/media/computer_networks.jpg": "/portfolio_website/static/media/computer_networks.ebde5501.jpg",
-    "static/media/embedded_systems_interfacing.jpg": "/portfolio_website/static/media/embedded_systems_interfacing.f190fd13.jpg",
-    "static/media/index.css": "/portfolio_website/static/media/open-sans-vietnamese-400-normal.19701383.woff2",
-    "static/media/white.jpg": "/portfolio_website/static/media/white.5222e69c.jpg"
+    "main.js": "/Portfolio_Website/static/js/main.42c857e0.chunk.js",
+    "main.js.map": "/Portfolio_Website/static/js/main.42c857e0.chunk.js.map",
+    "runtime-main.js": "/Portfolio_Website/static/js/runtime-main.33f9ec95.js",
+    "runtime-main.js.map": "/Portfolio_Website/static/js/runtime-main.33f9ec95.js.map",
+    "static/css/2.16f68320.chunk.css": "/Portfolio_Website/static/css/2.16f68320.chunk.css",
+    "static/js/2.985aeccc.chunk.js": "/Portfolio_Website/static/js/2.985aeccc.chunk.js",
+    "static/js/2.985aeccc.chunk.js.map": "/Portfolio_Website/static/js/2.985aeccc.chunk.js.map",
+    "index.html": "/Portfolio_Website/index.html",
+    "static/css/2.16f68320.chunk.css.map": "/Portfolio_Website/static/css/2.16f68320.chunk.css.map",
+    "static/js/2.985aeccc.chunk.js.LICENSE.txt": "/Portfolio_Website/static/js/2.985aeccc.chunk.js.LICENSE.txt",
+    "static/media/Signature6.74c01a45.png": "/Portfolio_Website/static/media/Signature6.74c01a45.png",
+    "static/media/computer_networks.jpg": "/Portfolio_Website/static/media/computer_networks.ebde5501.jpg",
+    "static/media/embedded_systems_interfacing.jpg": "/Portfolio_Website/static/media/embedded_systems_interfacing.f190fd13.jpg",
+    "static/media/index.css": "/Portfolio_Website/static/media/open-sans-vietnamese-400-normal.19701383.woff2",
+    "static/media/white.jpg": "/Portfolio_Website/static/media/white.5222e69c.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b1f4474c.js",
-    "static/css/2.ac68c868.chunk.css",
+    "static/js/runtime-main.33f9ec95.js",
+    "static/css/2.16f68320.chunk.css",
     "static/js/2.985aeccc.chunk.js",
     "static/js/main.42c857e0.chunk.js"
   ]
