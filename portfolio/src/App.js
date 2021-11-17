@@ -21,10 +21,11 @@ function App() {
       <div className="App">
         <Navigation />
         <div id="home"><Home /></div>
+        <div id="courses"><LineDivider /></div>
+        <Courses />
+        <div id="projects"><LineDivider /></div>
+        <Projects />
         <LineDivider />
-        <div id="courses"><Courses /></div>
-        <LineDivider />
-        <div id="projects"><Projects /></div>
       </div>
       </ThemeProvider>
   );

@@ -23,7 +23,7 @@ const images = importAll(
 function Courses() {
   return (
     <Container>
-      <Typography variant="h2">Courses</Typography>
+      <Typography variant="h2" sx={{mb: 4}}>Courses</Typography>
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

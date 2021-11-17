@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 
 function Home() {
   return (
-    <Container sx={{ height: "100vh" }}>
+    <Container sx={{ height: "100vh"}}>
       <Grid
         container
         direction="column"

@@ -23,8 +23,7 @@ function Navigation() {
               to="home"
               spy={true}
               smooth={true}
-              offset={-70}
-              duration={1000}
+              duration={1500}
               style={{textDecoration: "none", color: "white"}}
             >
               {" "}
@@ -37,8 +36,7 @@ function Navigation() {
               to="courses"
               spy={true}
               smooth={true}
-              offset={-70}
-              duration={1000}
+              duration={1500}
               style={{textDecoration: "none", color: "white"}}
             >
               {" "}
@@ -51,8 +49,7 @@ function Navigation() {
               to="projects"
               spy={true}
               smooth={true}
-              offset={-70}
-              duration={1000}
+              duration={1500}
               style={{textDecoration: "none", color: "white"}}
             >
               {" "}
