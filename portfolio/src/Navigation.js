@@ -78,7 +78,7 @@ function Navigation() {
               sx={{
                 "& .MuiPaper-root": {
                   background: "black",
-                  width: "30%",
+                  width: "50%",
                 },
               }}
               anchor={"left"}
