@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
@@ -9,50 +9,50 @@ import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import GitHub from "@mui/icons-material/GitHub";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import { Button } from "@mui/material";
 
 function Navigation() {
-  const [state, setState] = React.useState({
+  const [state, setState] = useState({
     mobile: false,
     drawerOpen: false,
   });
 
   const { mobile, drawerOpen } = state;
 
-  React.useEffect(() => {
-    const setResponsiveness = () => {
-      return window.innerWidth < 800
-        ? setState((prevState) => ({ ...prevState, mobile: true }))
-        : setState((prevState) => ({ ...prevState, mobile: false }));
-    };
+  const setResponsiveness = () => {
+    return window.innerWidth < 800
+      ? setState((state) => ({ ...state, mobile: true }))
+      : setState((state) => ({ ...state, mobile: false }));
+  };
 
+  const handleDrawer = () => {
+    return drawerOpen
+      ? setState((state) => ({ ...state, drawerOpen: false }))
+      : setState((state) => ({ ...state, drawerOpen: true }));
+  }; 
+
+  useEffect(() => {
     setResponsiveness();
     window.addEventListener("resize", () => setResponsiveness());
-
-    return () => {
-      window.removeEventListener("resize", () => setResponsiveness());
-    };
   }, []);
 
   const menuChoices = ["Home", "Courses", "Projects"];
 
   function getMenuChoices() {
-    const handleDrawerClose = () =>
-      setState((prevState) => ({ ...prevState, drawerOpen: false }));
-
-    return menuChoices.map((text) => {
+    return menuChoices.map((choice) => {
       return (
         <Grid item align="center">
           <Link
             activeClass="active"
-            to={text}
+            to={choice}
             spy={true}
             smooth={true}
             duration={1500}
-            style={{ textDecoration: "none", color: "white" }}
-            key={text}
-            onClick={() => (mobile ? handleDrawerClose() : {})}
+            key={choice}
+            onClick={handleDrawer}
           >
-            <Tab label={text} />
+            <Button sx={{ mx: 1, color: "white" }}>{choice}</Button>
           </Link>
         </Grid>
       );
@@ -60,16 +60,11 @@ function Navigation() {
   }
 
   function displayMobile() {
-    const handleDrawerOpen = () =>
-      setState((prevState) => ({ ...prevState, drawerOpen: true }));
-    const handleDrawerClose = () =>
-      setState((prevState) => ({ ...prevState, drawerOpen: false }));
-
     return (
       <Toolbar>
         <Grid container alignItems="center">
           <Grid item>
-            <IconButton onClick={handleDrawerOpen}>
+            <IconButton onClick={handleDrawer}>
               <MenuIcon sx={{ color: "white" }} />
             </IconButton>
           </Grid>
@@ -78,14 +73,23 @@ function Navigation() {
               sx={{
                 "& .MuiPaper-root": {
                   background: "black",
-                  width: "50%",
+                  width: "300px",
                 },
               }}
-              anchor={"left"}
+              anchor={'left'}
               open={drawerOpen}
-              onClose={handleDrawerClose}
-            >
-              <div>{getMenuChoices()}</div>
+              onClose={handleDrawer}
+            > 
+            <Grid container direction="column">
+              <Grid item p={2} >
+                <IconButton onClick={handleDrawer}>
+                  <CloseIcon sx={{ color: "white" }}/>
+                </IconButton>
+              </Grid>
+              <Grid container spacing={2} direction="column">
+                {getMenuChoices()}
+              </Grid>
+            </Grid>
             </SwipeableDrawer>
           </Grid>
           <Grid item xs />

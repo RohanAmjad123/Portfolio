@@ -1,8 +1,9 @@
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material/";
 import Navigation from "./Navigation";
-import Home from "./pages/Home";
-import Courses from "./pages/Courses";
-import Projects from "./pages/Projects";
+import Home from "./sections/Home";
+import Courses from "./sections/Courses";
+import Projects from "./sections/Projects";
+import Footer from "./sections/Footer";
 import LineDivider from "./components/LineDivider";
 import "@fontsource/open-sans";
 
@@ -14,7 +15,7 @@ const theme = createTheme({
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={ theme }>
       <CssBaseline />
       <div className="App">
         <Navigation />
