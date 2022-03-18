@@ -1,5 +1,5 @@
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material/";
-import Navigation from "./Navigation";
+import Navigation from "./components/Navigation";
 import Home from "./sections/Home";
 import Courses from "./sections/Courses";
 import Projects from "./sections/Projects";
