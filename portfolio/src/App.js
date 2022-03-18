@@ -3,6 +3,8 @@ import Navigation from "./components/Navigation";
 import Home from "./sections/Home";
 import Courses from "./sections/Courses";
 import Projects from "./sections/Projects";
+import Footer from "./sections/Footer";
+import Container from "@mui/material/Container";
 import "@fontsource/open-sans";
 
 const theme = createTheme({
@@ -17,15 +19,20 @@ function App() {
       <CssBaseline />
       <div className="App">
         <Navigation />
-        <div id="Home">
-          <Home />
-        </div>
-        <div id="Courses">
-          <Courses />
-        </div>
-        <div id="Projects">
-          <Projects />
-        </div>
+        <Container>
+          <div className="section" id="Home">
+            <Home />
+          </div>
+          <div className="section" id="Courses">
+            <Courses />
+          </div>
+          <div className="section" id="Projects">
+            <Projects />
+          </div>
+          <div className="section" id="Footer">
+            <Footer />
+          </div>
+        </Container>
       </div>
     </ThemeProvider>
   );

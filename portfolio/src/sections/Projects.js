@@ -3,9 +3,9 @@ import Typography from "@mui/material/Typography";
 
 function Projects() {
   return (
-    <Container>
-      <Typography variant="h2">Projects</Typography>
-    </Container>
+    <div>
+      <Typography variant="h3">Projects</Typography>
+    </div>
   );
 }
 

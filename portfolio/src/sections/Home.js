@@ -10,7 +10,7 @@ function Home() {
   });
 
   return (
-    <Container sx={{ height: "100vh" }}>
+    <div>
       <Grid
         container
         direction="column"
@@ -35,7 +35,7 @@ function Home() {
           </Grid>
         </animated.div>
       </Grid>
-    </Container>
+    </div>
   );
 }
 
