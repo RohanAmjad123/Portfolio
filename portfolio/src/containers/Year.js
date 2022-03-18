@@ -1,6 +1,5 @@
-import { Container, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import Semester from "./Semester";
-import Paper from "@mui/material/Paper";
 import { Grid } from "@mui/material";
 
 function Year({ year }) {

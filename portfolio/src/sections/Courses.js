@@ -1,11 +1,4 @@
-import Course from "../containers/Course";
-import Semester from "../containers/Semester";
-import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Typography from "@mui/material/Typography";
 import Year from "../containers/Year";
 

@@ -3,8 +3,6 @@ import Navigation from "./components/Navigation";
 import Home from "./sections/Home";
 import Courses from "./sections/Courses";
 import Projects from "./sections/Projects";
-import Footer from "./sections/Footer";
-import LineDivider from "./components/LineDivider";
 import "@fontsource/open-sans";
 
 const theme = createTheme({
@@ -15,7 +13,7 @@ const theme = createTheme({
 
 function App() {
   return (
-    <ThemeProvider theme={ theme }>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="App">
         <Navigation />
@@ -23,14 +21,11 @@ function App() {
           <Home />
         </div>
         <div id="Courses">
-          <LineDivider />
+          <Courses />
         </div>
-        <Courses />
         <div id="Projects">
-          <LineDivider />
+          <Projects />
         </div>
-        <Projects />
-        <LineDivider />
       </div>
     </ThemeProvider>
   );
