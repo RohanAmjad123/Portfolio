@@ -230,7 +230,7 @@ const coursesData = [
 ]
 
 function Courses () {
-  const yearsList = coursesData.map((year) => <Year year={year} />)
+  const yearsList = coursesData.map((year) => <Year key={year.year} year={year.year} semesters={year.semesters} />)
 
   return (
     <div>

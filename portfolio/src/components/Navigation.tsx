@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
 import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
-import Tab from '@mui/material/Tab'
 import Grid from '@mui/material/Grid'
 import IconButton from '@mui/material/IconButton'
 import SwipeableDrawer from '@mui/material/SwipeableDrawer'
@@ -37,7 +36,8 @@ function Navigation () {
 
   function getMenuChoices () {
     return menuChoices.map((choice) => (
-      <Grid item align="center">
+      <div key={choice}>
+      <Grid item>
         <Link
           activeClass="active"
           to={choice}
@@ -50,6 +50,7 @@ function Navigation () {
           <Button sx={{ mx: 1, color: 'white' }}>{choice}</Button>
         </Link>
       </Grid>
+      </div>
     ))
   }
 
@@ -73,6 +74,7 @@ function Navigation () {
               anchor="left"
               open={drawerOpen}
               onClose={handleDrawer}
+              onOpen={((event) => {})}
             >
               <Grid container direction="column">
                 <Grid item p={2}>

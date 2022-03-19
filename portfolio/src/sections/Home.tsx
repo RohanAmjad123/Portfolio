@@ -1,4 +1,5 @@
-import React from 'react'import Typography from '@mui/material/Typography'
+import React from 'react'
+import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 import { useSpring, animated } from '@react-spring/web'
 

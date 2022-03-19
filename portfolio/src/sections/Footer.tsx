@@ -1,7 +1,7 @@
 import React from 'react'
 import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
-import EmailForm from '../forms/EmailForm.js'
+import EmailForm from '../forms/EmailForm'
 
 function Footer () {
   return (

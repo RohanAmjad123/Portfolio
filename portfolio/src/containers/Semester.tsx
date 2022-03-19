@@ -3,8 +3,13 @@ import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import Course from './Course'
 
-function Semester ({ semester, courses }) {
-  const coursesList = courses.map((course) => <Course title={course.title} description={course.description} />)
+interface CourseObj {
+  title: string,
+  description: string
+}
+
+function Semester ({ semester, courses }: { semester: string, courses: CourseObj[] }) {
+  const coursesList = courses.map((course) => <Course key={course.title} title={course.title} description={course.description} />)
 
   return (
     <Grid container item direction="row" py={2}>
