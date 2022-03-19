@@ -1,20 +1,18 @@
-import { Typography } from "@mui/material";
-import Semester from "./Semester";
-import { Grid } from "@mui/material";
+import React from 'react'
+import { Typography, Grid } from '@mui/material'
+import Semester from './Semester'
 
-function Year({ year }) {
-  const semestersList = year.semesters.map((semester) => {
-    return <Semester semester={semester.semester} courses={semester.courses} />;
-  });
+function Year ({ year }) {
+  const semestersList = year.semesters.map((semester) => <Semester semester={semester.semester} courses={semester.courses} />)
 
   return (
     <Grid container py={3}>
-        <Grid item>
-          <Typography variant="h6">{year.year}</Typography>
-        </Grid>
-        { semestersList }
+      <Grid item>
+        <Typography variant="h6">{year.year}</Typography>
+      </Grid>
+      { semestersList }
     </Grid>
-  );
+  )
 }
 
-export default Year;
+export default Year

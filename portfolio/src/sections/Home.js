@@ -1,13 +1,12 @@
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Grid from "@mui/material/Grid";
-import { useSpring, animated } from "@react-spring/web";
+import React from 'react'import Typography from '@mui/material/Typography'
+import Grid from '@mui/material/Grid'
+import { useSpring, animated } from '@react-spring/web'
 
-function Home() {
+function Home () {
   const fadeIn = useSpring({
     from: { opacity: 0 },
-    to: { opacity: 1 },
-  });
+    to: { opacity: 1 }
+  })
 
   return (
     <div>
@@ -15,7 +14,7 @@ function Home() {
         container
         direction="column"
         justifyContent="center"
-        sx={{ height: "100vh" }}
+        sx={{ height: '100vh' }}
         lg={12}
         md={12}
         sm={12}
@@ -36,7 +35,7 @@ function Home() {
         </animated.div>
       </Grid>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

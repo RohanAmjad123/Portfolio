@@ -1,19 +1,20 @@
-import { CssBaseline, ThemeProvider, createTheme } from "@mui/material/";
-import Navigation from "./components/Navigation";
-import Home from "./sections/Home";
-import Courses from "./sections/Courses";
-import Projects from "./sections/Projects";
-import Footer from "./sections/Footer";
-import Container from "@mui/material/Container";
-import "@fontsource/open-sans";
+import React from 'react'
+import { CssBaseline, ThemeProvider, createTheme } from '@mui/material/'
+import Container from '@mui/material/Container'
+import Navigation from './components/Navigation'
+import Home from './sections/Home'
+import Courses from './sections/Courses'
+import Projects from './sections/Projects'
+import Footer from './sections/Footer'
+import '@fontsource/open-sans'
 
 const theme = createTheme({
   typography: {
-    fontFamily: ['"Open Sans"'].join(","),
-  },
-});
+    fontFamily: ['"Open Sans"'].join(',')
+  }
+})
 
-function App() {
+function App () {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -35,7 +36,7 @@ function App() {
         </Container>
       </div>
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
+export default App
