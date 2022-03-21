@@ -1,24 +1,22 @@
 {
   "files": {
-    "main.js": "/Portfolio/static/js/main.a4b05a4f.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.a4b05a4f.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.c65a14fc.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.c65a14fc.js.map",
-    "static/css/2.15e64d4f.chunk.css": "/Portfolio/static/css/2.15e64d4f.chunk.css",
-    "static/js/2.71d21b7f.chunk.js": "/Portfolio/static/js/2.71d21b7f.chunk.js",
-    "static/js/2.71d21b7f.chunk.js.map": "/Portfolio/static/js/2.71d21b7f.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.e56798cf.css",
+    "main.js": "/Portfolio/static/js/main.fd9a0fce.js",
+    "static/media/open-sans-all-400-normal.woff": "/Portfolio/static/media/open-sans-all-400-normal.fd1a30188fbba33c1971.woff",
+    "static/media/open-sans-cyrillic-ext-400-normal.woff2": "/Portfolio/static/media/open-sans-cyrillic-ext-400-normal.432abaf385d938750963.woff2",
+    "static/media/open-sans-latin-400-normal.woff2": "/Portfolio/static/media/open-sans-latin-400-normal.a2d02404d087c7c068d4.woff2",
+    "static/media/open-sans-latin-ext-400-normal.woff2": "/Portfolio/static/media/open-sans-latin-ext-400-normal.0950a0dbc206706736db.woff2",
+    "static/media/open-sans-cyrillic-400-normal.woff2": "/Portfolio/static/media/open-sans-cyrillic-400-normal.8c8b009e2308cfd36674.woff2",
+    "static/media/open-sans-greek-400-normal.woff2": "/Portfolio/static/media/open-sans-greek-400-normal.f4df5aa87d97ffdd65c4.woff2",
+    "static/media/open-sans-hebrew-400-normal.woff2": "/Portfolio/static/media/open-sans-hebrew-400-normal.c4e6d354894703317c0c.woff2",
+    "static/media/open-sans-vietnamese-400-normal.woff2": "/Portfolio/static/media/open-sans-vietnamese-400-normal.1970138327ca2599f2c5.woff2",
+    "static/media/open-sans-greek-ext-400-normal.woff2": "/Portfolio/static/media/open-sans-greek-ext-400-normal.7f0c7c378a3ca829b189.woff2",
     "index.html": "/Portfolio/index.html",
-    "static/css/2.15e64d4f.chunk.css.map": "/Portfolio/static/css/2.15e64d4f.chunk.css.map",
-    "static/js/2.71d21b7f.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.71d21b7f.chunk.js.LICENSE.txt",
-    "static/media/computer_networks.jpg": "/Portfolio/static/media/computer_networks.ebde5501.jpg",
-    "static/media/embedded_systems_interfacing.jpg": "/Portfolio/static/media/embedded_systems_interfacing.f190fd13.jpg",
-    "static/media/index.css": "/Portfolio/static/media/open-sans-vietnamese-400-normal.19701383.woff2",
-    "static/media/white.jpg": "/Portfolio/static/media/white.5222e69c.jpg"
+    "main.e56798cf.css.map": "/Portfolio/static/css/main.e56798cf.css.map",
+    "main.fd9a0fce.js.map": "/Portfolio/static/js/main.fd9a0fce.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.c65a14fc.js",
-    "static/css/2.15e64d4f.chunk.css",
-    "static/js/2.71d21b7f.chunk.js",
-    "static/js/main.a4b05a4f.chunk.js"
+    "static/css/main.e56798cf.css",
+    "static/js/main.fd9a0fce.js"
   ]
 }
