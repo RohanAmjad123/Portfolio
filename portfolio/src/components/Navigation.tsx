@@ -36,21 +36,21 @@ function Navigation () {
 
   function getMenuChoices () {
     return menuChoices.map((choice) => (
-      <div key={choice}>
-      <Grid item>
-        <Link
-          activeClass="active"
-          to={choice}
-          spy
-          smooth
-          duration={1500}
-          key={choice}
-          onClick={handleDrawer}
-        >
-          <Button sx={{ mx: 1, color: 'white' }}>{choice}</Button>
-        </Link>
-      </Grid>
-      </div>
+      <React.Fragment key={choice}>
+        <Grid item>
+          <Link
+            activeClass="active"
+            to={choice}
+            spy
+            smooth
+            duration={1500}
+            key={choice}
+            onClick={handleDrawer}
+          >
+            <Button fullWidth sx={{ px: 2, color: 'white' }}>{choice}</Button>
+          </Link>
+        </Grid>
+      </React.Fragment>
     ))
   }
 
