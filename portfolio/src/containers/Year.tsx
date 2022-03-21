@@ -1,7 +1,7 @@
 import React from 'react'
-import { Typography, Grid } from '@mui/material'
+import { Typography, Grid, Accordion, AccordionSummary, AccordionDetails } from '@mui/material'
 import Semester from './Semester'
-
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 interface SemesterObj {
   semester: string,
   courses: {
@@ -15,10 +15,16 @@ function Year ({ year, semesters }: { year: number, semesters: SemesterObj[] }) 
 
   return (
     <Grid item container rowSpacing={3}>
-      <Grid item>
-        <Typography variant="h6">{year}</Typography>
-      </Grid>
-      { semestersList }
+      <Accordion>
+        <Grid item >
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography variant="h6">{year}</Typography>
+          </AccordionSummary>
+        </Grid>
+        <AccordionDetails>
+          { semestersList }
+        </ AccordionDetails>
+      </Accordion>
     </Grid>
   )
 }
