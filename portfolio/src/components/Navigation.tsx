@@ -32,7 +32,7 @@ function Navigation () {
     window.addEventListener('resize', () => setResponsiveness())
   }, [])
 
-  const menuChoices = ['Home', 'Courses', 'Projects']
+  const menuChoices = ['Home', 'Courses', 'Projects', 'Contact']
 
   function getMenuChoices () {
     return menuChoices.map((choice) => (

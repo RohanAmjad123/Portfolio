@@ -30,7 +30,7 @@ function App () {
           <div className="section" id="Projects">
             <Projects />
           </div>
-          <div className="section" id="Footer">
+          <div className="section" id="Contact">
             <Footer />
           </div>
         </Container>

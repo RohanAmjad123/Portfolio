@@ -235,7 +235,7 @@ function Courses () {
 
   return (
     <div>
-      <Typography variant="h3" sx={{ my: 6 }}>
+      <Typography variant="h3" sx={{ pb: 6, pt: 10 }}>
         Courses
       </Typography>
       <Grid container rowSpacing={3}>
