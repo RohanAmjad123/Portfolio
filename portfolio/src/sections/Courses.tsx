@@ -1,6 +1,7 @@
 import React from 'react'
 import Typography from '@mui/material/Typography'
 import Year from '../containers/Year'
+import { Grid } from '@mui/material'
 
 const coursesData = [
   {
@@ -234,10 +235,12 @@ function Courses () {
 
   return (
     <div>
-      <Typography variant="h3" sx={{ mb: 4 }}>
+      <Typography variant="h3" sx={{ my: 6 }}>
         Courses
       </Typography>
-      { yearsList }
+      <Grid container rowSpacing={3}>
+        { yearsList }
+      </Grid>
     </div>
   )
 }

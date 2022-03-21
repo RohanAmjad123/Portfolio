@@ -14,7 +14,7 @@ function Year ({ year, semesters }: { year: number, semesters: SemesterObj[] }) 
   const semestersList = semesters.map((semester) => <Semester key={semester.semester} semester={semester.semester} courses={semester.courses} />)
 
   return (
-    <Grid container py={3}>
+    <Grid item container rowSpacing={3}>
       <Grid item>
         <Typography variant="h6">{year}</Typography>
       </Grid>

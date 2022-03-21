@@ -6,7 +6,7 @@ import EmailForm from '../forms/EmailForm'
 function Footer () {
   return (
     <div>
-      <Grid container direction="column" spacing={3} py={5}>
+      <Grid container direction="column" rowSpacing={3} py={5}>
         <Grid item>
           <Typography variant="h5">Contact Me</Typography>
         </Grid>
