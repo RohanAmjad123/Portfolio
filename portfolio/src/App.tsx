@@ -1,6 +1,5 @@
 import React from 'react'
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material/'
-import Container from '@mui/material/Container'
 import Navigation from './components/Navigation'
 import Home from './sections/Home'
 import Courses from './sections/Courses'
@@ -20,7 +19,6 @@ function App () {
       <CssBaseline />
       <div className="App">
         <Navigation />
-        <Container>
           <div className="section" id="Home">
             <Home />
           </div>
@@ -33,7 +31,6 @@ function App () {
           <div className="section" id="Contact">
             <Footer />
           </div>
-        </Container>
       </div>
     </ThemeProvider>
   )

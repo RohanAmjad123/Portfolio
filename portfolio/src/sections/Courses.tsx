@@ -1,7 +1,7 @@
 import React from 'react'
 import Typography from '@mui/material/Typography'
 import Year from '../containers/Year'
-import { Grid } from '@mui/material'
+import { Grid, Paper, Container } from '@mui/material'
 
 const coursesData = [
   {
@@ -234,14 +234,16 @@ function Courses () {
   const yearsList = coursesData.map((year) => <Year key={year.year} year={year.year} semesters={year.semesters} />)
 
   return (
-    <div>
-      <Typography variant="h3" sx={{ pb: 6, pt: 10 }}>
-        Courses
-      </Typography>
-      <Grid container rowSpacing={3}>
-        { yearsList }
-      </Grid>
-    </div>
+    <Paper>
+      <Container>
+        <Typography variant="h3" sx={{ pb: 6, pt: 10 }}>
+          Courses
+        </Typography>
+        <Grid container rowSpacing={3}>
+          { yearsList }
+        </Grid>
+      </Container>
+    </Paper>
   )
 }
 
